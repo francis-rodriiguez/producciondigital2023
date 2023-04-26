@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@600&family=Roboto:wght@300;400&display=swap");
+
+h1 {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 60px;
+  color: rgb(41, 33, 25);
+  padding-bottom: 40px;
+}
+
+h2 {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 40px;
+  color: rgb(41, 33, 25);
+  padding-bottom: 40px;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(41, 33, 25);
+}
+
+p {
+  color: rgb(41, 33, 25);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(41, 33, 25);
+}
+
+.margin {
+  margin: 10% 2% 10% 2%;
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.reconocimiento {
+  height: 200px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 90vh;
+  text-shadow: 2px 2px 4px rgb(171, 157, 140);
+}
+
+#cta {
+  height: 300px;
+  width: auto;
+}
+
+#background-cta {
+  margin: 0px;
+  padding: 40px 0px 0px 0px;
+  background-color: rgb(63, 36, 06);
+}
+
+#reconocimientos-altura {
+  display: flex;
+}
+
+.d-flex {
+  display: flex;
+  gap: 40px; /* Espacio entre las columnas */
+}
+
+footer {
+  margin: 40px;
+}
+footer p {
+  color: black;
+  text-align: center;
+}
