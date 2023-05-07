@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@600&family=Roboto:wght@300;400&display=swap");
 
+/*Titulos y parrafos*/
 h1 {
   font-family: "Advent Pro", sans-serif;
   font-size: 60px;
@@ -28,11 +29,11 @@ p {
   font-weight: 400;
   color: rgb(41, 33, 25);
 }
-
-.margin {
-  margin: 10% 2% 10% 2%;
+/*Espacios entre secciones*/
+.padding {
+  padding: 10% 4% 0% 4%;
 }
-
+/*Card*/
 .card-img-top {
   height: 300px;
   object-fit: cover;
@@ -61,7 +62,26 @@ p {
 #background-cta {
   margin: 0px;
   padding: 40px 0px 0px 0px;
-  background-color: rgb(63, 36, 06);
+  background-image: linear-gradient(to bottom right, #cac3bb, #3f2406);
+}
+
+#background-novedades {
+  background-image: radial-gradient(circle, #bf471b, #bf471b);
+  padding-bottom: 10%;
+}
+
+#background-reconociminetos {
+  background-image: linear-gradient(
+    to bottom,
+    #fff3e9,
+    #fff3e9 70%,
+    #bf471b 30%,
+    #bf471b
+  );
+  background-size: 100% 100%;
+}
+#background-reparto {
+  background-image: linear-gradient(to bottom, #ffffff 20%, #fff3e9 80%);
 }
 
 #reconocimientos-altura {
@@ -71,6 +91,36 @@ p {
 .d-flex {
   display: flex;
   gap: 40px; /* Espacio entre las columnas */
+}
+
+.card-body {
+  height: 120px;
+}
+
+.card {
+  border: none;
+}
+.card-overlay {
+  position: relative;
+}
+.card-overlay img:last-child {
+  position: absolute;
+  top: 0;
+  left: 45%;
+}
+
+.carousel-5 .carousel-item {
+  width: calc(100% / 5);
+}
+
+.carousel-5 .carousel-item-next,
+.carousel-5 .carousel-item-prev,
+.carousel-5 .carousel-item.active {
+  display: flex !important;
+}
+
+.carousel-5 .carousel-indicators {
+  display: none;
 }
 
 footer {
