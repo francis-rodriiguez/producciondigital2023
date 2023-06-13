@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <script
       src="https://kit.fontawesome.com/0bcebe315b.js"
       crossorigin="anonymous"
@@ -21,25 +22,31 @@
     <div class="container text-center" id="nav-desktop">
       <div class="cols-3 row align-items-center">
         <div class="col-3">
-          <img
-            src="images/logo-avatar.png"
-            style="width: 45%; height: auto; padding: 10px 0px 10px 0px"
-            alt="Logo de avatar la leyenda de Aang"
-          />
+          <a class="nav-link" href="index.html">
+            <img
+              src="images/logo-avatar.png"
+              style="width: 45%; height: auto; padding: 10px 0px 10px 0px"
+              alt="Logo de avatar la leyenda de Aang"
+            />
+          </a>
         </div>
         <div class="col-6">
           <ul class="nav justify-content-center text-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Backstage</a>
+              <a class="nav-link" href="backstage.html">Backstage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Datos historicos</a>
+              <a class="nav-link" href="datos-historicos.html"
+                >Datos historicos</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link">Juego</a>
+              <a class="nav-link" href="juego.html">Juego</a>
             </li>
           </ul>
         </div>
@@ -61,6 +68,7 @@
           src="images/logo-avatar.png"
           style="width: 35%; height: auto; padding: 10px 0px 10px 0px"
           alt="Logo de avatar la leyenda de Aang"
+          
         />
         <button
           class="navbar-toggler"
@@ -76,16 +84,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Backstage</a>
+              <a class="nav-link" href="backstage.html">Backstage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Datos historicos</a>
+              <a class="nav-link" href="datos-historicos.html">Datos historicos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Juego</a>
+              <a class="nav-link" href="juego.html">Juego</a>
             </li>
           </ul>
         </div>
@@ -205,55 +213,228 @@
     <section class="padding patron" id="background-reparto">
       <h2 style="text-align: center">Reparto y equipo</h2>
       <!--Cards-->
-      <div class="row row-cols-1 row-cols-md-5 g-4">
-        <div class="col">
-          <div class="card shadow h-100">
-            <img src="images/zachtyler.png" class="card-img-top" alt="..." />
-            <div class="card-body" style="background-color: rgb(191, 71, 27)">
-              <h5 class="card-title" style="color: white">Zach Tyler Eisen</h5>
-              <p class="card-text" style="color: white">Aang</p>
+      <div class="row mx-auto my-auto justify-content-center">
+        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active mb-3 mx-3">
+              <div class="col-md-3 px-3">
+                <a href="backstage.html#Zach-Tyler-Eisen">
+                  <div class="card shadow h-100">
+                    <img
+                      src="images/zachtyler.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div
+                      class="card-body"
+                      style="background-color: rgb(191, 71, 27)"
+                    >
+                      <h5 class="card-title" style="color: white">
+                        Zach Tyler Eisen
+                      </h5>
+                      <p class="card-text" style="color: white">Aang</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3 px-3">
+                <a href="backstage.html#Mae-Whitman">
+                  <div class="card shadow h-100">
+                    <img
+                      src="images/mae-whitman.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div
+                      class="card-body"
+                      style="background-color: rgb(191, 71, 27)"
+                    >
+                      <h5 class="card-title" style="color: white">
+                        Mae M. Whitman
+                      </h5>
+                      <p class="card-text" style="color: white">Katara</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3 px-3">
+                <a href="backstage.html#Zach-Tyler-Eisen">
+                  <div class="card shadow h-100">
+                    <img
+                      src="images/jack-desena.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div
+                      class="card-body"
+                      style="background-color: rgb(191, 71, 27)"
+                    >
+                      <h5 class="card-title" style="color: white">
+                        Jack DeSena
+                      </h5>
+                      <p class="card-text" style="color: white">Sokka</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3 px-3">
+                <a href="backstage.html#Jessie-Flower">
+                  <div class="card shadow h-100">
+                    <img
+                      src="images/jessie-flower.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div
+                      class="card-body"
+                      style="background-color: rgb(191, 71, 27)"
+                    >
+                      <h5 class="card-title" style="color: white">
+                        Jessie Flower
+                      </h5>
+                      <p class="card-text" style="color: white">Toph</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3 px-3">
+                <a href="backstage.html#Dante-Basco">
+                  <div class="card shadow h-100">
+                    <img
+                      src="images/dante-basco.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div
+                      class="card-body"
+                      style="background-color: rgb(191, 71, 27)"
+                    >
+                      <h5 class="card-title" style="color: white">
+                        Dante Basco
+                      </h5>
+                      <p class="card-text" style="color: white">Zuko</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3 px-3">
+                <a href="backstage.html#Grey-DeLisle">
+                  <div class="card shadow h-100">
+                    <img
+                      src="images/Grey DeLisle.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div
+                      class="card-body"
+                      style="background-color: rgb(191, 71, 27)"
+                    >
+                      <h5 class="card-title" style="color: white">
+                        Grey DeLisle
+                      </h5>
+                      <p class="card-text" style="color: white">
+                        Princesa Azula
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3 px-3">
+                <a href="backstage.html#Mark-Hamill">
+                  <div class="card shadow h-100">
+                    <img
+                      src="images/Mark Hamill.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div
+                      class="card-body"
+                      style="background-color: rgb(191, 71, 27)"
+                    >
+                      <h5 class="card-title" style="color: white">
+                        Mark Hamill
+                      </h5>
+                      <p class="card-text" style="color: white">
+                        Señor del Fuego Ozai
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3 px-3">
+                <a href="backstage.html#Bryan-Konietzko">
+                  <div class="card shadow h-100">
+                    <img
+                      src="images/Bryan Konietzko.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div
+                      class="card-body"
+                      style="background-color: rgb(191, 71, 27)"
+                    >
+                      <h5 class="card-title" style="color: white">
+                        Bryan Konietzko
+                      </h5>
+                      <p class="card-text" style="color: white">Co-creador</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3 px-3">
+                <a href="backstage.html#Michael-Dante">
+                  <div class="card shadow h-100">
+                    <img
+                      src="images/Michael Dante DiMartino.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div
+                      class="card-body"
+                      style="background-color: rgb(191, 71, 27)"
+                    >
+                      <h5 class="card-title" style="color: white">
+                        Michael Dante DiMartino
+                      </h5>
+                      <p class="card-text" style="color: white">Co-creador</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow h-100">
-            <img src="images/mae-whitman.jpg" class="card-img-top" alt="..." />
-            <div class="card-body" style="background-color: rgb(191, 71, 27)">
-              <h5 class="card-title" style="color: white">Mae M. Whitman</h5>
-              <p class="card-text" style="color: white">Katara</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow h-100">
-            <img src="images/jack-desena.jpg" class="card-img-top" alt="..." />
-            <div class="card-body" style="background-color: rgb(191, 71, 27)">
-              <h5 class="card-title" style="color: white">Jack DeSena</h5>
-              <p class="card-text" style="color: white">Sokka</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow h-100">
-            <img
-              src="images/jessie-flower.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body" style="background-color: rgb(191, 71, 27)">
-              <h5 class="card-title" style="color: white">Jessie Flower</h5>
-              <p class="card-text" style="color: white">Toph</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow h-100">
-            <img src="images/dante-basco.jpg" class="card-img-top" alt="..." />
-            <div class="card-body" style="background-color: rgb(191, 71, 27)">
-              <h5 class="card-title" style="color: white">Dante Basco</h5>
-              <p class="card-text" style="color: white">Zuko</p>
-            </div>
-          </div>
+          <a
+            class="carousel-control-prev bg-transparent w-aut"
+            href="#recipeCarousel"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a
+            class="carousel-control-next bg-transparent w-aut"
+            href="#recipeCarousel"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
         </div>
       </div>
     </section>
@@ -322,46 +503,67 @@
     <!--Inicio la sección número cinco-->
     <section class="padding" id="background-novedades">
       <h2 style="color: rgb(255, 255, 255); text-align: center">Novedades</h2>
-      <div class="d-flex">
-        <div class="card shadow">
-          <img src="images/adult-avatar.jpeg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">
-              Avatar la pelicula: Se revelan personajes y edades
-            </h5>
-            <p class="card-text">
-              Conoce los personajes confirmados que participaran en la nueva
-              pelicula de Avatar.
-            </p>
-          </div>
-          <div class="card-body">
-            <a href="#" class="card-link">Seguir leyendo</a>
-          </div>
-        </div>
-        <div class="card shadow">
-          <img src="images/gordon-cormier.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Nueva adaptación de Netflix</h5>
-            <p class="card-text">
-              La gigante plataforma de streaming decidio tomar el reto de traer
-              a live action la historia de Avatar.
-            </p>
-          </div>
-          <div class="card-body">
-            <a href="#" class="card-link">Seguir leyendo </a>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col mb-4 col-12 col-lg-4">
+          <div class="card shadow">
+            <img
+              src="images/gordon-cormier.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body h-100">
+              <h5 class="card-title">Nueva adaptación de Netflix</h5>
+              <p class="card-text">
+                La gigante plataforma de streaming decidio tomar el reto de
+                traer a live action la historia de Avatar.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="card-link">Seguir leyendo </a>
+            </div>
           </div>
         </div>
-        <div class="card shadow">
-          <img src="images/equipo-aang.jpeg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">¡El equipo Aang regresa a las pantallas!</h5>
-            <p class="card-text">
-              Recientemente los directores originales de la serie confirmaron
-              estar trabajando en una trilogiía de peliculas.
-            </p>
+          <div class="col mb-4 col-12 col-lg-4">
+            <div class="card shadow">
+              <img
+                src="images/adult-avatar.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body h-100">
+                <h5 class="card-title">
+                  Avatar la pelicula: Se revelan personajes y edades
+                </h5>
+                <p class="card-text">
+                  Conoce los personajes confirmados que participaran en la nueva
+                  pelicula de Avatar.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="card-link">Seguir leyendo</a>
+              </div>
+            </div>
           </div>
-          <div class="card-body">
-            <a href="#" class="card-link">Seguir leyendo </a>
+          <div class="col mb-4 col-12 col-lg-4">
+            <div class="card shadow">
+              <img
+                src="images/equipo-aang.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body h-100">
+                <h5 class="card-title">
+                  ¡El equipo Aang regresa a las pantallas!
+                </h5>
+                <p class="card-text">
+                  Recientemente los directores originales de la serie
+                  confirmaron estar trabajando en una trilogiía de peliculas.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="card-link">Seguir leyendo </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -423,6 +625,23 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
+    <script>
+      let items = document.querySelectorAll(".carousel .carousel-item");
+
+      items.forEach((el) => {
+        const minPerSlide = 4;
+        let next = el.nextElementSibling;
+        for (var i = 1; i < minPerSlide; i++) {
+          if (!next) {
+            // wrap carousel by using first child
+            next = items[0];
+          }
+          let cloneChild = next.cloneNode(true);
+          el.appendChild(cloneChild.children[0]);
+          next = next.nextElementSibling;
+        }
+      });
+    </script>
   </body>
   <footer>
     <div class="redes">

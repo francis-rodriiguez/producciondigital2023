@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Avatar: La leyenda de aang</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/0bcebe315b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Nav para desktop-->
+    <div class="container text-center" id="nav-desktop">
+      <div class="cols-3 row align-items-center">
+        <div class="col-3">
+          <a class="nav-link" href="index.html">
+            <img
+              src="images/logo-avatar.png"
+              style="width: 45%; height: auto; padding: 10px 0px 10px 0px"
+              alt="Logo de avatar la leyenda de Aang"
+            />
+          </a>
+        </div>
+        <div class="col-6">
+          <ul class="nav justify-content-center text-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="backstage.html">Backstage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="datos-historicos.html"
+                >Datos historicos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="juego.html">Juego</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <i class="fa-solid fa-cart-shopping fa-lg"></i>
+          <i class="fa-regular fa-user fa-lg"></i>
+        </div>
+      </div>
+    </div>
+
+    <!--Nav rsponsive-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-responsive">
+      <div class="container-fluid">
+        <div>
+          <i class="fa-regular fa-user fa-xl"></i>
+          <i class="fa-solid fa-cart-shopping fa-xl"></i>
+        </div>
+        <img
+          src="images/logo-avatar.png"
+          style="width: 35%; height: auto; padding: 10px 0px 10px 0px"
+          alt="Logo de avatar la leyenda de Aang"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="backstage.html">Backstage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="datos-historicos.html">Datos historicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="juego.html">Juego</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Header desktop-->
+    <section>
+      <div class="card text-bg-dark position-relative header">
+        <img src="images/avatar la leyenda de aang.jpg" class="card-img" alt="..." >
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+        <div class="card-img-overlay d-flex flex-column justify-content">
+          <h1 class="card-title text-center text-light">Backstage</h1>
+        </div>
+      </div>
+    </section>
+
+    <!--Inicio de la sección número uno-->
+    <section class="padding" id="background-intro">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <h2>El nacimiento de una historia legendaria</h2>
+          </div>
+          <div class="col">
+            <div class="text-end">
+              <p>
+                En el año 2001 en Burbank, California, dos jóvenes animadores
+                llamados Michael Dante DiMartino y Bryan Konietzko comenzaron a
+                trabajar en una nueva serie animada para Nickelodeon. Pero lo
+                que no sabían es que su idea se convertiría en una de las series
+                más icónicas de la televisión, "Avatar: La Leyenda de Aang".
+                Konietzko re-imaginó un viejo dibujo de un hombre calvo como un
+                niño y dibujó un bisonte en el cielo. Cuando DiMartino vio el
+                dibujo, se inspiró en un documental sobre exploradores atrapados
+                en el Polo Sur. Con su idea completa, los dos jóvenes
+                presentaron su concepto al vicepresidente de Nickelodeon, Eric
+                Coleman, y obtuvieron luz verde para producir la serie en solo
+                dos semanas. Así comenzó una gran historia que cautivó a
+                millones de espectadores en todo el mundo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Inicia la sección número dos-->
+    <section class="padding patron" id="background-reparto">
+      <div id="gallery-section">
+        <div id="thumbnail-gallery-container">
+          <!---- Top Row --->
+
+          <a class="thumbnail" href="#lightbox-image-1"
+            ><img
+              class="thumbnail-image"
+              src="images/LastAirBender-01.jpeg"
+              alt="Colourful abstract collage art"
+          /></a>
+
+          <a class="thumbnail" href="#lightbox-image-2"
+            ><img class="thumbnail-image" src="images/LastAirBender-04.jpeg"
+          /></a>
+
+          <a class="thumbnail" href="#lightbox-image-3"
+            ><img
+              class="thumbnail-image"
+              src="images/LastAirBender-06.jpeg"
+              alt="Assorted succulent plants in a glass jar."
+          /></a>
+
+          <!--- Bottom Row --->
+
+          <a class="thumbnail" href="#lightbox-image-4"
+            ><img
+              class="thumbnail-image"
+              src="images/LastAirBender-07.jpeg"
+              alt="Two table top glass jars of succulents."
+          /></a>
+
+          <a class="thumbnail" href="#lightbox-image-5"
+            ><img
+              class="thumbnail-image"
+              src="images/LastAirBender-1.jpg"
+              alt="Table top glass jar of plants."
+          /></a>
+
+          <a class="thumbnail" href="#lightbox-image-6"
+            ><img
+              class="thumbnail-image"
+              src="images/LastAirBender-10.jpeg"
+              alt="Small pots of cactii."
+          /></a>
+
+          <a class="thumbnail" href="#lightbox-image-7"
+            ><img
+              class="thumbnail-image"
+              src="images/LastAirBender-5.jpg"
+              alt="Small pots of cactii."
+          /></a>
+
+          <a class="thumbnail" href="#lightbox-image-8"
+            ><img
+              class="thumbnail-image"
+              src="images/LastAirBender-12.jpeg"
+              alt="Small pots of cactii."
+          /></a>
+          <a class="thumbnail" href="#lightbox-image-9"
+            ><img
+              class="thumbnail-image"
+              src="images/LastAirBender-15.jpeg"
+              alt="Small pots of cactii."
+          /></a>
+          <a class="thumbnail" href="#lightbox-image-10"
+            ><img
+              class="thumbnail-image"
+              src="images/LastAirBender-11.jpg"
+              alt="Small pots of cactii."
+          /></a>
+        </div>
+        <!-- thumbnail-gallery-container -->
+      </div>
+      <!--- gallery-section --->
+
+      <!--- Lightbox overlay. Below content is hidden until :target activated --->
+
+      <div class="lightbox-overlay" id="lightbox-image-1">
+        <div class="lightbox-content">
+          <a class="close" href="#gallery-section"></a>
+
+          <img
+            class="lightbox-image"
+            src="images/LastAirBender-01.jpeg"
+            alt="Terrarium on table."
+          />
+
+          <p class="lightbox-navigation">
+            <a class="next" href="#lightbox-image-2">Next</a>
+          </p>
+        </div>
+        <!-- lightbox-content -->
+      </div>
+      <!--- lightbox-overlay --->
+
+      <div class="lightbox-overlay" id="lightbox-image-2">
+        <div class="lightbox-content">
+          <a class="close" href="#gallery-section"></a>
+
+          <img
+            class="lightbox-image"
+            src="images/LastAirBender-04.jpeg"
+            alt="Potted Succulent on Table."
+          />
+
+          <p class="lightbox-navigation">
+            <a class="back" href="#lightbox-image-1">Back</a
+            ><a class="next" href="#lightbox-image-3">Next</a>
+          </p>
+        </div>
+        <!-- lightbox-content -->
+      </div>
+      <!--- lightbox-overlay --->
+
+      <div class="lightbox-overlay" id="lightbox-image-3">
+        <div class="lightbox-content">
+          <a class="close" href="#gallery-section"></a>
+
+          <img
+            class="lightbox-image"
+            src="images/LastAirBender-06.jpeg"
+            alt="Assorted succulents in a jar."
+          />
+
+          <p class="lightbox-navigation">
+            <a class="back" href="#lightbox-image-2">Back</a
+            ><a class="next" href="#lightbox-image-4">Next</a>
+          </p>
+        </div>
+        <!-- lightbox-content -->
+      </div>
+      <!--- lightbox-overlay --->
+
+      <div class="lightbox-overlay" id="lightbox-image-4">
+        <div class="lightbox-content">
+          <a class="close" href="#gallery-section"></a>
+
+          <img
+            class="lightbox-image"
+            src="images/LastAirBender-07.jpeg"
+            alt="Two table top jars of assorted succulents."
+          />
+
+          <p class="lightbox-navigation">
+            <a class="back" href="#lightbox-image-3">Back</a
+            ><a class="next" href="#lightbox-image-5">Next</a>
+          </p>
+        </div>
+        <!-- lightbox-content -->
+      </div>
+      <!--- lightbox-overlay --->
+
+      <div class="lightbox-overlay" id="lightbox-image-5">
+        <div class="lightbox-content">
+          <a class="close" href="#gallery-section"></a>
+
+          <img
+            class="lightbox-image"
+            src="images/LastAirBender-1.jpg"
+            alt="Assorted plants in a jar."
+          />
+
+          <p class="lightbox-navigation">
+            <a class="back" href="#lightbox-image-4">Back</a
+            ><a class="next" href="#lightbox-image-6">Next</a>
+          </p>
+        </div>
+        <!-- lightbox-content -->
+      </div>
+      <!--- lightbox-overlay --->
+
+      <div class="lightbox-overlay" id="lightbox-image-6">
+        <div class="lightbox-content">
+          <a class="close" href="#gallery-section"></a>
+
+          <img
+            class="lightbox-image"
+            src="images/LastAirBender-10.jpeg"
+            alt="Assorted plants in a jar."
+          />
+
+          <p class="lightbox-navigation">
+            <a class="back" href="#lightbox-image-4">Back</a
+            ><a class="next" href="#lightbox-image-6">Next</a>
+          </p>
+        </div>
+        <!-- lightbox-content -->
+      </div>
+      <!--- lightbox-overlay --->
+
+      <div class="lightbox-overlay" id="lightbox-image-7">
+        <div class="lightbox-content">
+          <a class="close" href="#gallery-section"></a>
+
+          <img
+            class="lightbox-image"
+            src="images/LastAirBender-5.jpg"
+            alt="Assorted plants in a jar."
+          />
+
+          <p class="lightbox-navigation">
+            <a class="back" href="#lightbox-image-4">Back</a
+            ><a class="next" href="#lightbox-image-6">Next</a>
+          </p>
+        </div>
+        <!-- lightbox-content -->
+      </div>
+      <!--- lightbox-overlay --->
+
+      <div class="lightbox-overlay" id="lightbox-image-8">
+        <div class="lightbox-content">
+          <a class="close" href="#gallery-section"></a>
+
+          <img
+            class="lightbox-image"
+            src="images/LastAirBender-12.jpeg"
+            alt="Assorted plants in a jar."
+          />
+
+          <p class="lightbox-navigation">
+            <a class="back" href="#lightbox-image-4">Back</a
+            ><a class="next" href="#lightbox-image-6">Next</a>
+          </p>
+        </div>
+        <!-- lightbox-content -->
+      </div>
+      <!--- lightbox-overlay --->
+
+      <div class="lightbox-overlay" id="lightbox-image-9">
+        <div class="lightbox-content">
+          <a class="close" href="#gallery-section"></a>
+
+          <img
+            class="lightbox-image"
+            src="images/LastAirBender-15.jpeg"
+            alt="Assorted plants in a jar."
+          />
+
+          <p class="lightbox-navigation">
+            <a class="back" href="#lightbox-image-4">Back</a
+            ><a class="next" href="#lightbox-image-6">Next</a>
+          </p>
+        </div>
+        <!-- lightbox-content -->
+      </div>
+      <!--- lightbox-overlay --->
+
+      <div class="lightbox-overlay" id="lightbox-image-10">
+        <div class="lightbox-content">
+          <a class="close" href="#gallery-section"></a>
+
+          <img
+            class="lightbox-image"
+            src="images/LastAirBender-11.jpg"
+            alt="Small pots of cactii."
+          />
+
+          <p class="lightbox-navigation">
+            <a class="next" href="#lightbox-image-5">Back</a>
+          </p>
+        </div>
+        <!-- lightbox-content -->
+      </div>
+      <!--- lightbox-overlay --->
+    </section>
+
+    <!--Inicio la sección número tres-->
+    <section class="padding" id="background-reconociminetos">
+      <div class="container" id="Zach-Tyler-Eisen">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <img
+              src="images/zachtyler.png"
+              alt="Zach Tyler Eisen"
+              class="card-img-top img-fluid "
+            />
+          </div>
+          <div class="col">
+            <div class="text-end">
+              <h2> Zach Tyler Eisen</h2>
+              <h4>Avatar Aang</h4>
+              <p>
+                Zach Tyler Eisen es un actor de voz estadounidense nacido en
+                1993 en Stamford, Connecticut. Es conocido por su trabajo en la
+                serie animada "Avatar: The Last Airbender", donde dio voz al
+                personaje principal, Aang. También ha prestado su voz a
+                personajes en otras series como "The Backyardigans" y "Bubble
+                Guppies". Además, ha aparecido en películas como "Marley & Me" y
+                "The Ant Bully". Aunque ha mantenido un perfil bajo en los
+                últimos años, su trabajo en "Avatar: The Last Airbender" le
+                valió una nominación al premio Annie en 2007 y sigue siendo
+                recordado como una parte importante del éxito de la serie.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="Jessie-Flower">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <h2>Jessie Flower</h2>
+            <h4>Toph Beifong</h4>
+            <p>
+              Jessie Flower es una actriz de voz estadounidense nacida en 1994
+              en Southern California. Comenzó su carrera como actriz de voz en
+              2005, interpretando el papel de Toph Beifong en la serie animada
+              "Avatar: The Last Airbender". Flower continuó interpretando a Toph
+              en la secuela de la serie, "The Legend of Korra", así como en
+              varios videojuegos basados en la franquicia. Además de su trabajo
+              en "Avatar", Flower ha prestado su voz a personajes en otras
+              series animadas, incluyendo "The Emperor's New School" y "Ben 10:
+              Alien Force". También ha aparecido en películas como "Meet the
+              Robinsons" de Disney.
+            </p>
+          </div>
+          <div class="col">
+            <div class="text-end">
+              <img
+              src="images/jessie-flower.jpg"
+              alt="Jessie Flower"
+              class="card-img-top img-fluid"
+            />
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container"  id="Mae-Whitman">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <img
+            src="images/mae-whitman.jpg"
+            alt="Mae Whitman"
+            class="card-img-top img-fluid "
+          />
+          </div>
+          <div class="col">
+            <div class="text-end">
+              <h2>Mae Whitman</h2>
+              <h4>Katara</h4>
+              <p>
+                Mae Whitman es una actriz estadounidense nacida en 1988 en Los
+                Ángeles, California. Es reconocida por su trabajo en la serie
+                animada "Avatar: The Last Airbender", donde dio voz a varios
+                personajes. Whitman interpretó a Katara, la heroína principal de
+                la serie, cuyo viaje de autodescubrimiento y lucha por la
+                justicia fue uno de los temas principales del show. Además de su
+                trabajo en "Avatar", Whitman ha prestado su voz a numerosos
+                personajes en otras series animadas, incluyendo "Teenage Mutant
+                Ninja Turtles", "DC Super Hero Girls" y "Tinker Bell". También
+                ha aparecido en películas como "The Duff", "Scott Pilgrim vs.
+                the World" y "Independence Day".
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container"  id="Dante-Basco">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <h2>Dante Basco</h2>
+            <h4>Principe Zuko</h4>
+            <p>
+              Dante Basco es un actor y productor estadounidense de ascendencia
+              filipina nacido en 1975 en Pittsburg, California. Es conocido por
+              su trabajo como actor de voz en la serie animada "Avatar: The Last
+              Airbender", donde dio voz al príncipe Zuko. Basco también ha
+              prestado su voz a personajes en otras series animadas, incluyendo
+              "American Dragon: Jake Long" y "The Legend of Korra". Además de su
+              trabajo de voz, Basco ha aparecido en varias películas y series de
+              televisión, incluyendo "Hook", "The Deuce" y "Fresh off the Boat".
+              También ha trabajado como productor en películas como "The
+              Fabulous Filipino Brothers" y "The Book of 12". Fuera de su
+              carrera en la actuación, Basco también es conocido por su trabajo
+              como defensor de la comunidad filipino-estadounidense.
+            </p>
+          </div>
+          <div class="col">
+            <div class="text-end">
+              <img
+            src="images/dante-basco.jpg"
+            alt="Grey DeLisle"
+            class="card-img-top img-fluid "
+          />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="Grey-DeLisle">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <img
+            src="images/Grey DeLisle.jpg"
+            alt="Grey DeLisle"
+            class="card-img-top img-fluid "
+          />
+          </div>
+          <div class="col">
+            <div class="text-end">
+              <h2>Grey DeLisle</h2>
+              <h4>Princesa Azula</h4>
+              <p>
+                Grey DeLisle es una actriz y cantante estadounidense nacida en
+                1973 en Fort Ord, California. Es reconocida por su trabajo en la
+                serie animada "Avatar: The Last Airbender", donde dio voz a
+                varios personajes. DeLisle interpretó a la Princesa Azula, uno
+                de los principales antagonistas de la serie y a la vez uno de
+                los personajes más complejos y fascinantes del show. También
+                prestó su voz a otros personajes como la guerrera Kyoshi y la
+                madre de Katara, Kya. Además de su trabajo en "Avatar", DeLisle
+                ha prestado su voz a numerosos personajes en otras series
+                animadas, incluyendo "The Fairly OddParents", "The Grim
+                Adventures of Billy & Mandy" y "Star Wars: Rebels". También ha
+                aparecido en películas animadas como "Batman: The Killing Joke"
+                y "The Little Mermaid II: Return to the Sea".
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="Mark-Hamill">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <h2>Mark Hamill</h2>
+            <h4>Señor del Fuego Ozai</h4>
+            <p>
+              Mark Hamill es un actor estadounidense nacido en 1951 en Oakland,
+              California. Es conocido por su icónico papel como Luke Skywalker
+              en la saga de "Star Wars", pero también ha tenido una carrera
+              exitosa como actor de voz. En la serie animada "Avatar: The Last
+              Airbender", Hamill dio voz al personaje del Señor del Fuego Ozai,
+              el principal antagonista de la serie. Además de su trabajo en
+              "Avatar", Hamill también es conocido por su papel como el Joker en
+              varias series y películas animadas de Batman, así como por prestar
+              su voz a varios personajes en videojuegos y otras series animadas.
+              Hamill es considerado uno de los actores de voz más talentosos de
+              su generación.
+            </p>
+          </div>
+          <div class="col">
+            <div class="text-end">
+              <img
+            src="images/Mark Hamill.jpg"
+            alt=" Mark Hamill"
+            class="card-img-top img-fluid "
+          />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="Bryan-Konietzko">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <img
+            src="images/Bryan Konietzko.jpg"
+            alt="Grey DeLisle"
+            class="card-img-top img-fluid "
+          />
+          </div>
+          <div class="col">
+            <div class="text-end">
+              <h2>Bryan Konietzko</h2>
+              <h4>Co-creador</h4>
+              <p>
+                Bryan Konietzko es un artista y animador estadounidense. Nació en Westchester, Nueva York, en 1975, y estudió en la Escuela de Artes Visuales de Nueva York. Antes de trabajar en la animación, Konietzko trabajó en el campo de los efectos visuales para películas. En 2002, se unió a Nickelodeon y trabajó en la creación de la serie animada de éxito, Avatar: la leyenda de Aang, junto con Michael Dante DiMartino. La serie recibió elogios por su complejidad temática y su animación detallada. Konietzko también trabajó en la serie de Nickelodeon, The Legend of Korra, y ha sido reconocido por su trabajo con varios premios, incluyendo un premio Primetime Emmy. Además de su carrera en la animación, Konietzko es un artista visual y ha exhibido su trabajo en galerías de todo el mundo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="Michael-Dante">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <h2>Michael Dante DiMartino</h2>
+            <h4>Co-creador</h4>
+            <p>
+              Michael Dante DiMartino es un escritor, productor y director de televisión estadounidense. Nació en Shelburne, Vermont, en 1974 y estudió en la Escuela de Artes de Rhode Island. Después de graduarse, trabajó en varias series animadas, como King of the Hill y Family Guy, antes de unirse a Nickelodeon en 2002. DiMartino es conocido por ser el co-creador, junto con Bryan Konietzko, de la exitosa serie animada de Nickelodeon, Avatar: la leyenda de Aang. También ha trabajado en otras series como The Legend of Korra y ha sido reconocido con varios premios, incluyendo un premio Primetime Emmy.
+            </p>
+          </div>
+          <div class="col">
+            <div class="text-end">
+              <img
+            src="images/Michael Dante DiMartino.jpg"
+            alt=" Mark Hamill"
+            class="card-img-top img-fluid "
+          />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer>
+    <div class="redes">
+      <i class="fa-brands fa-instagram fa-xl" style="color: #000000"></i>
+      <i class="fa-regular fa-envelope fa-xl" style="color: #000000"></i>
+      <i class="fa-brands fa-spotify fa-xl" style="color: #000000"></i>
+    </div>
+    <p>Terminos y condiciones | Politicas de privaciadad</p>
+    <p>2023 Francis Rodriguez</p>
+  </footer>
+</html>
