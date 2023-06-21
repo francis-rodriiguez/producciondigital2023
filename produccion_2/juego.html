@@ -105,7 +105,7 @@
     </nav>
 
     <!--Header desktop-->
-    <section>
+    <div>
       <div class="card text-bg-dark position-relative header">
         <img
           src="images/avatar la leyenda de aang.jpg"
@@ -116,22 +116,24 @@
           class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
         ></div>
         <div class="card-img-overlay d-flex flex-column justify-content">
-          <h1 class="card-title text-center text-light">AvatarGenerations</h1>
+          <h1 class="card-title text-center text-light js-scroll fade-in">
+            Avatar Generations
+          </h1>
         </div>
       </div>
-    </section>
+    </div>
 
     <!--Inicio de la sección número dos-->
     <section class="padding" id="background-intro">
       <div class="container">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col order-2 order-md-1 js-scroll slide-left">
             <img
               src="images/Aang_Base_AvatarState.png"
               class="card-img-top img-fluid"
             />
           </div>
-          <div class="col">
+          <div class="col order-1 order-md-2 js-scroll slide-right">
             <div class="text-end">
               <h2>Únete a la aventura: Explora, domina y compite</h2>
               <p>
@@ -153,13 +155,43 @@
         </div>
       </div>
     </section>
+    <section
+      style="display: flex; justify-content: center; align-items: center"
+    >
+      <div>
+        <h2 class="js-scroll fade-in" style="text-align: center">
+          La aventura comienza
+        </h2>
+        <h3 class="espacio js-scroll fade-in" style="text-align: center">
+          No te quedes por fuera
+        </h3>
+        <iframe
+          src="https://www.youtube.com/embed/0ZCnyWndVbM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          class="js-scroll fade-in-bottom"
+        ></iframe>
+      </div>
+    </section>
 
     <!--Inicia la sección número tres-->
     <section class="padding patron" id="background-novedades">
-      <h2 style="text-align: center">Reparto y equipo</h2>
+      <h2 class="js-scroll fade-in" style="text-align: center; color: white">
+        Elige el personaje que mejor vaya contigo
+      </h2>
+      <h3
+        class="espacio js-scroll fade-in"
+        style="text-align: center; color: white"
+      >
+        Descubre las increibles habilidades que posee cada uno
+      </h3>
       <!--Cards-->
-      <div class="row row-cols-1 row-cols-md-3 justify-content-center">
-        <div class="col text-center">
+      <div
+        class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center"
+      >
+        <div class="col text-center espacio">
           <img src="images/personaje-aang.png" />
           <!-- Button trigger modal -->
           <button
@@ -171,7 +203,7 @@
             Conocer más
           </button>
         </div>
-        <div class="col text-center">
+        <div class="col text-center espacio">
           <img src="images/personaje-katara.png" />
           <!-- Button trigger modal -->
           <button
@@ -183,7 +215,7 @@
             Conocer más
           </button>
         </div>
-        <div class="col text-center">
+        <div class="col text-center espacio">
           <img src="images/personaje-soka.png" />
           <!-- Button trigger modal -->
           <button
@@ -465,7 +497,7 @@
 
     <!--Call To Action-->
     <section id="cta-desktop">
-      <div class="container text-left">
+      <div class="container text-left js-scroll fade-in">
         <div class="row align-items-start">
           <div class="col">
             <img
@@ -489,7 +521,7 @@
 
     <!--Call To Action Mobile-->
     <section id="cta-mobile">
-      <div class="container text-left">
+      <div class="container text-left js-scroll fade-in">
         <div class="row align-items-start">
           <div class="col">
             <h2 style="color: white">¿Estas listo para salvar el mundo?</h2>
@@ -537,14 +569,65 @@
         }
       });
     </script>
+    <script>
+      const scrollElements = document.querySelectorAll(".js-scroll");
+
+      const elementInView = (el, dividend = 1) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+          elementTop <=
+          (window.innerHeight || document.documentElement.clientHeight) /
+            dividend
+        );
+      };
+
+      const elementOutofView = (el) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+          elementTop >
+          (window.innerHeight || document.documentElement.clientHeight)
+        );
+      };
+
+      const displayScrollElement = (element) => {
+        element.classList.add("scrolled");
+      };
+
+      const hideScrollElement = (element) => {
+        element.classList.remove("scrolled");
+      };
+
+      const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+          if (elementInView(el, 1.25)) {
+            displayScrollElement(el);
+          } else if (elementOutofView(el)) {
+            hideScrollElement(el);
+          }
+        });
+      };
+
+      window.addEventListener("scroll", () => {
+        handleScrollAnimation();
+      });
+    </script>
   </body>
   <footer>
     <div class="redes">
-      <i class="fa-brands fa-instagram fa-xl" style="color: #000000"></i>
-      <i class="fa-regular fa-envelope fa-xl" style="color: #000000"></i>
-      <i class="fa-brands fa-spotify fa-xl" style="color: #000000"></i>
+      <a href="https://www.instagram.com/avatarthelastairbender/"
+        ><i class="fa-brands fa-instagram fa-xl" style="color: #000000"></i
+      ></a>
+      <a
+        href="https://open.spotify.com/playlist/5CVb6WwHvrvBJS4XhLKrmp?si=c663d0be5149418f"
+        ><i class="fa-brands fa-spotify fa-xl" style="color: #000000"></i
+      ></a>
     </div>
-    <p>Terminos y condiciones | Politicas de privaciadad</p>
+    <p>
+      <a href="error.html"> Terminos y condiciones</a
+      ><a href="error.html"> | Politicas de privaciadad</a>
+    </p>
     <p>2023 Francis Rodriguez</p>
   </footer>
 </html>

@@ -100,24 +100,24 @@
     </nav>
 
     <!--Header desktop-->
-    <section>
+    <div >
       <div class="card text-bg-dark position-relative header">
         <img src="images/avatar la leyenda de aang.jpg" class="card-img" alt="..." >
         <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
         <div class="card-img-overlay d-flex flex-column justify-content">
-          <h1 class="card-title text-center text-light">Backstage</h1>
+          <h1 class="card-title text-center text-light js-scroll fade-in">Backstage</h1>
         </div>
       </div>
-    </section>
+    </div>
 
     <!--Inicio de la sección número uno-->
     <section class="padding" id="background-intro">
       <div class="container">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col js-scroll slide-left">
             <h2>El nacimiento de una historia legendaria</h2>
           </div>
-          <div class="col">
+          <div class="col js-scroll slide-right ">
             <div class="text-end">
               <p>
                 En el año 2001 en Burbank, California, dos jóvenes animadores
@@ -141,88 +141,86 @@
     </section>
 
     <!--Inicia la sección número dos-->
-    <section class="padding patron" id="background-reparto">
-      <div id="gallery-section">
-        <div id="thumbnail-gallery-container">
+    <section class="padding patron" id="background-novedades">
+      
+      <div class="container" id="gallery-section">
+        <div class="row row-gap-5" id="thumbnail-gallery-container">
           <!---- Top Row --->
-
+          
+          <div class="col-sm-12 col-md-6 col-lg-3 js-scroll slide-left">
           <a class="thumbnail" href="#lightbox-image-1"
             ><img
               class="thumbnail-image"
               src="images/LastAirBender-01.jpeg"
               alt="Colourful abstract collage art"
           /></a>
+        </div>
 
+        <div class="col-sm-12 col-md-6 col-lg-3 js-scroll slide-left">
           <a class="thumbnail" href="#lightbox-image-2"
             ><img class="thumbnail-image" src="images/LastAirBender-04.jpeg"
           /></a>
+        </div>
 
+        <div class="col-sm-12 col-md-6 col-lg-3 js-scroll slide-left">
           <a class="thumbnail" href="#lightbox-image-3"
             ><img
               class="thumbnail-image"
               src="images/LastAirBender-06.jpeg"
               alt="Assorted succulent plants in a glass jar."
           /></a>
+        </div>
 
-          <!--- Bottom Row --->
-
+          <div class="col-sm-12 col-md-6 col-lg-3 js-scroll slide-left">
           <a class="thumbnail" href="#lightbox-image-4"
             ><img
               class="thumbnail-image"
               src="images/LastAirBender-07.jpeg"
               alt="Two table top glass jars of succulents."
           /></a>
+        </div>
 
+        <div class="col-sm-12 col-md-6 col-lg-3 js-scroll slide-left">
           <a class="thumbnail" href="#lightbox-image-5"
             ><img
               class="thumbnail-image"
               src="images/LastAirBender-1.jpg"
               alt="Table top glass jar of plants."
           /></a>
+        </div>
 
+        <div class="col-sm-12 col-md-6 col-lg-3 js-scroll slide-left">
           <a class="thumbnail" href="#lightbox-image-6"
             ><img
               class="thumbnail-image"
               src="images/LastAirBender-10.jpeg"
               alt="Small pots of cactii."
           /></a>
+        </div>
 
+        <div class="col-sm-12 col-md-6 col-lg-3 js-scroll slide-left">
           <a class="thumbnail" href="#lightbox-image-7"
             ><img
               class="thumbnail-image"
               src="images/LastAirBender-5.jpg"
               alt="Small pots of cactii."
           /></a>
+        </div>
 
+        <div class="col-sm-12 col-md-6 col-lg-3 js-scroll slide-left">
           <a class="thumbnail" href="#lightbox-image-8"
             ><img
               class="thumbnail-image"
               src="images/LastAirBender-12.jpeg"
               alt="Small pots of cactii."
           /></a>
-          <a class="thumbnail" href="#lightbox-image-9"
-            ><img
-              class="thumbnail-image"
-              src="images/LastAirBender-15.jpeg"
-              alt="Small pots of cactii."
-          /></a>
-          <a class="thumbnail" href="#lightbox-image-10"
-            ><img
-              class="thumbnail-image"
-              src="images/LastAirBender-11.jpg"
-              alt="Small pots of cactii."
-          /></a>
         </div>
-        <!-- thumbnail-gallery-container -->
-      </div>
-      <!--- gallery-section --->
-
+      
       <!--- Lightbox overlay. Below content is hidden until :target activated --->
 
       <div class="lightbox-overlay" id="lightbox-image-1">
         <div class="lightbox-content">
           <a class="close" href="#gallery-section"></a>
-
           <img
             class="lightbox-image"
             src="images/LastAirBender-01.jpeg"
@@ -233,9 +231,7 @@
             <a class="next" href="#lightbox-image-2">Next</a>
           </p>
         </div>
-        <!-- lightbox-content -->
       </div>
-      <!--- lightbox-overlay --->
 
       <div class="lightbox-overlay" id="lightbox-image-2">
         <div class="lightbox-content">
@@ -252,9 +248,7 @@
             ><a class="next" href="#lightbox-image-3">Next</a>
           </p>
         </div>
-        <!-- lightbox-content -->
       </div>
-      <!--- lightbox-overlay --->
 
       <div class="lightbox-overlay" id="lightbox-image-3">
         <div class="lightbox-content">
@@ -271,9 +265,7 @@
             ><a class="next" href="#lightbox-image-4">Next</a>
           </p>
         </div>
-        <!-- lightbox-content -->
       </div>
-      <!--- lightbox-overlay --->
 
       <div class="lightbox-overlay" id="lightbox-image-4">
         <div class="lightbox-content">
@@ -290,9 +282,7 @@
             ><a class="next" href="#lightbox-image-5">Next</a>
           </p>
         </div>
-        <!-- lightbox-content -->
       </div>
-      <!--- lightbox-overlay --->
 
       <div class="lightbox-overlay" id="lightbox-image-5">
         <div class="lightbox-content">
@@ -309,117 +299,67 @@
             ><a class="next" href="#lightbox-image-6">Next</a>
           </p>
         </div>
-        <!-- lightbox-content -->
       </div>
-      <!--- lightbox-overlay --->
 
       <div class="lightbox-overlay" id="lightbox-image-6">
         <div class="lightbox-content">
           <a class="close" href="#gallery-section"></a>
-
           <img
             class="lightbox-image"
             src="images/LastAirBender-10.jpeg"
             alt="Assorted plants in a jar."
           />
-
           <p class="lightbox-navigation">
-            <a class="back" href="#lightbox-image-4">Back</a
-            ><a class="next" href="#lightbox-image-6">Next</a>
+            <a class="back" href="#lightbox-image-5">Back</a
+            ><a class="next" href="#lightbox-image-7">Next</a>
           </p>
         </div>
-        <!-- lightbox-content -->
       </div>
-      <!--- lightbox-overlay --->
 
       <div class="lightbox-overlay" id="lightbox-image-7">
         <div class="lightbox-content">
           <a class="close" href="#gallery-section"></a>
-
           <img
             class="lightbox-image"
             src="images/LastAirBender-5.jpg"
             alt="Assorted plants in a jar."
           />
-
           <p class="lightbox-navigation">
-            <a class="back" href="#lightbox-image-4">Back</a
-            ><a class="next" href="#lightbox-image-6">Next</a>
+            <a class="back" href="#lightbox-image-6">Back</a
+            ><a class="next" href="#lightbox-image-8">Next</a>
           </p>
         </div>
-        <!-- lightbox-content -->
       </div>
-      <!--- lightbox-overlay --->
 
       <div class="lightbox-overlay" id="lightbox-image-8">
         <div class="lightbox-content">
           <a class="close" href="#gallery-section"></a>
-
           <img
             class="lightbox-image"
             src="images/LastAirBender-12.jpeg"
             alt="Assorted plants in a jar."
           />
-
           <p class="lightbox-navigation">
-            <a class="back" href="#lightbox-image-4">Back</a
-            ><a class="next" href="#lightbox-image-6">Next</a>
+            <a class="back" href="#lightbox-image-7">Back</a
           </p>
         </div>
-        <!-- lightbox-content -->
       </div>
-      <!--- lightbox-overlay --->
 
-      <div class="lightbox-overlay" id="lightbox-image-9">
-        <div class="lightbox-content">
-          <a class="close" href="#gallery-section"></a>
-
-          <img
-            class="lightbox-image"
-            src="images/LastAirBender-15.jpeg"
-            alt="Assorted plants in a jar."
-          />
-
-          <p class="lightbox-navigation">
-            <a class="back" href="#lightbox-image-4">Back</a
-            ><a class="next" href="#lightbox-image-6">Next</a>
-          </p>
-        </div>
-        <!-- lightbox-content -->
-      </div>
-      <!--- lightbox-overlay --->
-
-      <div class="lightbox-overlay" id="lightbox-image-10">
-        <div class="lightbox-content">
-          <a class="close" href="#gallery-section"></a>
-
-          <img
-            class="lightbox-image"
-            src="images/LastAirBender-11.jpg"
-            alt="Small pots of cactii."
-          />
-
-          <p class="lightbox-navigation">
-            <a class="next" href="#lightbox-image-5">Back</a>
-          </p>
-        </div>
-        <!-- lightbox-content -->
-      </div>
-      <!--- lightbox-overlay --->
+    
     </section>
 
     <!--Inicio la sección número tres-->
-    <section class="padding" id="background-reconociminetos">
+    <section class="padding" id="background-reparto">
       <div class="container" id="Zach-Tyler-Eisen">
-        <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+        <div class="row row-cols-1 row-cols-md-2 espacio">
+          <div class="col order-2 order-md-1 js-scroll slide-left">
             <img
               src="images/zachtyler.png"
               alt="Zach Tyler Eisen"
               class="card-img-top img-fluid "
             />
           </div>
-          <div class="col">
+          <div class="col order-1 order-md-2 js-scroll slide-right">
             <div class="text-end">
               <h2> Zach Tyler Eisen</h2>
               <h4>Avatar Aang</h4>
@@ -440,9 +380,9 @@
         </div>
       </div>
 
-      <div class="container" id="Jessie-Flower">
+      <div class="container espacio" id="Jessie-Flower">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col js-scroll slide-left">
             <h2>Jessie Flower</h2>
             <h4>Toph Beifong</h4>
             <p>
@@ -458,7 +398,7 @@
               Robinsons" de Disney.
             </p>
           </div>
-          <div class="col">
+          <div class="col js-scroll slide-right">
             <div class="text-end">
               <img
               src="images/jessie-flower.jpg"
@@ -470,16 +410,16 @@
           </div>
         </div>
       </div>
-      <div class="container"  id="Mae-Whitman">
+      <div class="container espacio"  id="Mae-Whitman">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col order-2 order-md-1 js-scroll slide-left">
             <img
             src="images/mae-whitman.jpg"
             alt="Mae Whitman"
             class="card-img-top img-fluid "
           />
           </div>
-          <div class="col">
+          <div class="col order-1 order-md-2 js-scroll slide-right">
             <div class="text-end">
               <h2>Mae Whitman</h2>
               <h4>Katara</h4>
@@ -500,9 +440,9 @@
           </div>
         </div>
       </div>
-      <div class="container"  id="Dante-Basco">
+      <div class="container espacio"  id="Dante-Basco">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col js-scroll slide-left">
             <h2>Dante Basco</h2>
             <h4>Principe Zuko</h4>
             <p>
@@ -520,7 +460,7 @@
               como defensor de la comunidad filipino-estadounidense.
             </p>
           </div>
-          <div class="col">
+          <div class="col js-scroll slide-right">
             <div class="text-end">
               <img
             src="images/dante-basco.jpg"
@@ -531,16 +471,16 @@
           </div>
         </div>
       </div>
-      <div class="container" id="Grey-DeLisle">
+      <div class="container espacio" id="Grey-DeLisle">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col order-2 order-md-1 js-scroll slide-left">
             <img
             src="images/Grey DeLisle.jpg"
             alt="Grey DeLisle"
             class="card-img-top img-fluid "
           />
           </div>
-          <div class="col">
+          <div class="col order-1 order-md-2 js-scroll slide-right">
             <div class="text-end">
               <h2>Grey DeLisle</h2>
               <h4>Princesa Azula</h4>
@@ -563,9 +503,9 @@
           </div>
         </div>
       </div>
-      <div class="container" id="Mark-Hamill">
+      <div class="container espacio" id="Mark-Hamill">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col js-scroll slide-left">
             <h2>Mark Hamill</h2>
             <h4>Señor del Fuego Ozai</h4>
             <p>
@@ -582,7 +522,7 @@
               su generación.
             </p>
           </div>
-          <div class="col">
+          <div class="col js-scroll slide-right">
             <div class="text-end">
               <img
             src="images/Mark Hamill.jpg"
@@ -593,16 +533,16 @@
           </div>
         </div>
       </div>
-      <div class="container" id="Bryan-Konietzko">
+      <div class="container espacio" id="Bryan-Konietzko">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col order-2 order-md-1 js-scroll slide-left">
             <img
             src="images/Bryan Konietzko.jpg"
             alt="Grey DeLisle"
             class="card-img-top img-fluid "
           />
           </div>
-          <div class="col">
+          <div class="col order-1 order-md-2 js-scroll slide-right">
             <div class="text-end">
               <h2>Bryan Konietzko</h2>
               <h4>Co-creador</h4>
@@ -613,16 +553,16 @@
           </div>
         </div>
       </div>
-      <div class="container" id="Michael-Dante">
+      <div class="container espacio" id="Michael-Dante">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col js-scroll slide-left">
             <h2>Michael Dante DiMartino</h2>
             <h4>Co-creador</h4>
             <p>
               Michael Dante DiMartino es un escritor, productor y director de televisión estadounidense. Nació en Shelburne, Vermont, en 1974 y estudió en la Escuela de Artes de Rhode Island. Después de graduarse, trabajó en varias series animadas, como King of the Hill y Family Guy, antes de unirse a Nickelodeon en 2002. DiMartino es conocido por ser el co-creador, junto con Bryan Konietzko, de la exitosa serie animada de Nickelodeon, Avatar: la leyenda de Aang. También ha trabajado en otras series como The Legend of Korra y ha sido reconocido con varios premios, incluyendo un premio Primetime Emmy.
             </p>
           </div>
-          <div class="col">
+          <div class="col js-scroll slide-right">
             <div class="text-end">
               <img
             src="images/Michael Dante DiMartino.jpg"
@@ -648,14 +588,62 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const scrollElements = document.querySelectorAll(".js-scroll");
+
+      const elementInView = (el, dividend = 1) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+          elementTop <=
+          (window.innerHeight || document.documentElement.clientHeight) /
+            dividend
+        );
+      };
+
+      const elementOutofView = (el) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+          elementTop >
+          (window.innerHeight || document.documentElement.clientHeight)
+        );
+      };
+
+      const displayScrollElement = (element) => {
+        element.classList.add("scrolled");
+      };
+
+      const hideScrollElement = (element) => {
+        element.classList.remove("scrolled");
+      };
+
+      const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+          if (elementInView(el, 1.25)) {
+            displayScrollElement(el);
+          } else if (elementOutofView(el)) {
+            hideScrollElement(el);
+          }
+        });
+      };
+
+      window.addEventListener("scroll", () => {
+        handleScrollAnimation();
+      });
+    </script>
   </body>
   <footer>
     <div class="redes">
-      <i class="fa-brands fa-instagram fa-xl" style="color: #000000"></i>
-      <i class="fa-regular fa-envelope fa-xl" style="color: #000000"></i>
-      <i class="fa-brands fa-spotify fa-xl" style="color: #000000"></i>
+      <a href="https://www.instagram.com/avatarthelastairbender/"
+        ><i class="fa-brands fa-instagram fa-xl" style="color: #000000"></i
+      ></a>
+      <a
+        href="https://open.spotify.com/playlist/5CVb6WwHvrvBJS4XhLKrmp?si=c663d0be5149418f"
+        ><i class="fa-brands fa-spotify fa-xl" style="color: #000000"></i
+      ></a>
     </div>
-    <p>Terminos y condiciones | Politicas de privaciadad</p>
+    <p><a href="error.html"> Terminos y condiciones</a><a href="error.html"> | Politicas de privaciadad</a></p>
     <p>2023 Francis Rodriguez</p>
   </footer>
 </html>

@@ -104,33 +104,27 @@
     </nav>
 
     <!--Header desktop-->
-    <section>
+    <div >
       <div class="card text-bg-dark position-relative header">
-        <img
-          src="images/avatar la leyenda de aang.jpg"
-          class="card-img"
-          alt="..."
-        />
-        <div
-          class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
-        ></div>
+        <img src="images/avatar la leyenda de aang.jpg" class="card-img" alt="..." >
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
         <div class="card-img-overlay d-flex flex-column justify-content">
-          <h1 class="card-title text-center text-light">Datos Históricos</h1>
+          <h1 class="card-title text-center text-light js-scroll fade-in">Datos Historicos</h1>
         </div>
       </div>
-    </section>
+    </div>
 
     <!--Inicio de la sección número dos-->
-    <section class="padding" id="background-intro">
-      <div class="container">
+    <section class="padding">
+      <div class="container espacio">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col order-2 order-md-1 js-scroll slide-left">
             <img
               src="images/Iroh-on-ship-with-tea.jpg"
               class="card-img-top img-fluid"
             />
           </div>
-          <div class="col">
+          <div class="col order-1 order-md-2 js-scroll slide-right">
             <div class="text-end">
               <h2>Cuestión de honor: Chonmage</h2>
               <p>
@@ -153,9 +147,9 @@
       </div>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col js-scroll slide-left">
             <div class="text-start">
-              <h2>Cuestión de honor: Chonmage</h2>
+              <h2>Significado de cortar el Chonmage</h2>
 
               <p>
                 Cortarse el chonmage era un acto simbólico y culturalmente
@@ -171,18 +165,24 @@
               </p>
             </div>
           </div>
-          <div class="col text-end">
-            <img
-              src="images/zuko se corta el chonmage.jpg"
-              class="card-img-top img-fluid"
-            />
+          <div class="col text-end js-scroll slide-right">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/gCt4GJivn5U?start=100"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
     </section>
 
     <!--Inicia la sección número tres-->
-    <section class="padding patron" id="background-reparto">
+    <section class="padding patron">
+      <h2 class="text-center espacio js-scroll fade-in"">Naciones que conforman el mundo</h2>
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button
@@ -216,18 +216,23 @@
           <div class="carousel-item active">
             <img src="images/tribu-aire.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
+              <h5>Nómadas del Aire</h5>
               <p>
-                Some representative placeholder content for the first slide.
+                Son un grupo pacífico y espiritual que vive en templos flotantes
+                y en las montañas. Los habitantes de la Nación del Aire son
+                Maestros Aire, capaces de controlar el aire y el viento.
               </p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="images/tribu-agua.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
+              <h5>Tribu del Agua</h5>
               <p>
-                Some representative placeholder content for the second slide.
+                Existen dos tribus del agua: la Tribu del Agua del Sur, que casi
+                fue exterminada después del ataque de la Nación del Fuego, y la
+                Tribu del Agua del Norte, que es un grupo hermético que no ve
+                con buenos ojos a los foráneos.
               </p>
             </div>
           </div>
@@ -238,9 +243,12 @@
               alt="..."
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h5>El Reino de la Tierra</h5>
               <p>
-                Some representative placeholder content for the third slide.
+                es una nación vasta y diversa, conocida por sus paisajes
+                montañosos y sus ricas minas de tierra. Los habitantes del Reino
+                de la Tierra son Maestros Tierra, capaces de controlar la tierra
+                y las rocas.
               </p>
             </div>
           </div>
@@ -251,9 +259,11 @@
               alt="..."
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h5>Nación del Fuego</h5>
               <p>
-                Some representative placeholder content for the third slide.
+                es la nación más industrializada y militarizada de todas. Los
+                habitantes de la Nación del Fuego son Maestros Fuego, capaces de
+                crear y controlar el fuego.
               </p>
             </div>
           </div>
@@ -281,10 +291,10 @@
 
     <!--Inicio la sección número cuatro-->
     <section class="padding">
-      <h2 style="text-align: center">Artes marciales</h2>
+      <h2 class="espacio js-scroll fade-in"" style="text-align: center">Artes marciales</h2>
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+        <div class="row row-cols-1 row-cols-md-2 espacio">
+          <div class="col js-scroll slide-left">
             <a data-bs-toggle="modal" href="#modal-imagen">
               <img src="images/tai-chi.png" class="card-img-top img-fluid" />
             </a>
@@ -292,7 +302,7 @@
 
           <!-- Modal que muestra la imagen en tamaño completo -->
           <div
-            class="modal fade"
+            class="modal fade "
             id="modal-imagen"
             tabindex="-1"
             aria-labelledby="modal-imagen-label"
@@ -306,7 +316,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col js-scroll slide-right">
             <div class="text-end">
               <h2>Tai-chi</h2>
               <p>
@@ -325,9 +335,9 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container espacio">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col js-scroll slide-left">
             <a data-bs-toggle="modal" href="#modal-imagen">
               <img src="images/Kung-Fu.jpg" class="card-img-top img-fluid" />
             </a>
@@ -349,7 +359,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col js-scroll slide-right">
             <div class="text-end">
               <h2>Kung Fu</h2>
               <p>
@@ -369,9 +379,9 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container espacio">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col js-scroll slide-left">
             <a data-bs-toggle="modal" href="#modal-imagen">
               <img src="images/Hung-Gar.png" class="card-img-top img-fluid" />
             </a>
@@ -393,7 +403,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col js-scroll slide-right">
             <div class="text-end">
               <h2>Hung Gar</h2>
               <p>
@@ -414,9 +424,9 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container espacio">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col js-scroll slide-left">
             <a data-bs-toggle="modal" href="#modal-imagen">
               <img src="images/Baguazhang.png" class="card-img-top img-fluid" />
             </a>
@@ -438,7 +448,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col js-scroll slide-right">
             <div class="text-end">
               <h2>Baguazhang</h2>
               <p>
@@ -471,14 +481,62 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const scrollElements = document.querySelectorAll(".js-scroll");
+
+      const elementInView = (el, dividend = 1) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+          elementTop <=
+          (window.innerHeight || document.documentElement.clientHeight) /
+            dividend
+        );
+      };
+
+      const elementOutofView = (el) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+          elementTop >
+          (window.innerHeight || document.documentElement.clientHeight)
+        );
+      };
+
+      const displayScrollElement = (element) => {
+        element.classList.add("scrolled");
+      };
+
+      const hideScrollElement = (element) => {
+        element.classList.remove("scrolled");
+      };
+
+      const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+          if (elementInView(el, 1.25)) {
+            displayScrollElement(el);
+          } else if (elementOutofView(el)) {
+            hideScrollElement(el);
+          }
+        });
+      };
+
+      window.addEventListener("scroll", () => {
+        handleScrollAnimation();
+      });
+    </script>
   </body>
   <footer>
     <div class="redes">
-      <i class="fa-brands fa-instagram fa-xl" style="color: #000000"></i>
-      <i class="fa-regular fa-envelope fa-xl" style="color: #000000"></i>
-      <i class="fa-brands fa-spotify fa-xl" style="color: #000000"></i>
+      <a href="https://www.instagram.com/avatarthelastairbender/"
+        ><i class="fa-brands fa-instagram fa-xl" style="color: #000000"></i
+      ></a>
+      <a
+        href="https://open.spotify.com/playlist/5CVb6WwHvrvBJS4XhLKrmp?si=c663d0be5149418f"
+        ><i class="fa-brands fa-spotify fa-xl" style="color: #000000"></i
+      ></a>
     </div>
-    <p>Terminos y condiciones | Politicas de privaciadad</p>
+    <p><a href="error.html"> Terminos y condiciones</a><a href="error.html"> | Politicas de privaciadad</a></p>
     <p>2023 Francis Rodriguez</p>
   </footer>
 </html>
