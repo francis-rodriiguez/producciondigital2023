@@ -498,6 +498,11 @@ div:after {
   }
 }
 
+.trailer {
+  width: 700px;
+  height: 350px;
+}
+
 iframe {
   width: 600px;
   height: 350px;
