@@ -593,10 +593,9 @@ iframe {
     height: 40vh;
     width: auto;
   }
-
-  iframe {
-    height: 660px;
-    width: 340px;
+  .video-vertical {
+    height: 640px;
+    width: 360px;
   }
 }
 
